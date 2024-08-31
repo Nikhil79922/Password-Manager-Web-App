@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password-Manager-Web-App</title>
+  <link href="src/output.css" rel="stylesheet">
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+    <header class="text-gray-600 bg-slate-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-800 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-white text-xl">Pass X</span>
+          </a>
+          <nav class="md:mr-auto text-gray-400 md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 cursor-pointer hover:text-gray-200">Home</a>
+            <a class="mr-5 cursor-pointer hover:text-gray-200">Services</a>
+            <a class="mr-5 cursor-pointer hover:text-gray-200">About Us</a>
+            <a class="mr-5 cursor-pointer hover:text-gray-200">Contact</a>
+          </nav>
+
+        </div>
+      </header>
+
+      <div class="content mt-5 w-[60vw] container m-auto flex flex-col gap-7">
+           
+        <div class="info flex flex-col gap-[4px]">
+          <h1 class="text-4xl underline font-extrabold">Password Manager</h1>
+          <p class="font-medium">SecurePass is a robust and intuitive password manager designed to protect your online accounts with military-grade encryption. Start your journey to safer online experiences today with SecurePass.</p>
+        </div>
+         
+        <div class="copy text-3xl h-[16px] invisible underline  font-extrabold text-red-600">Your Text (Copied)</div>
+
+          <table class="border-[2px]  border-black font-extrabold ">
+            <tr class="border-b-[2px] border-black ">
+              <th class="border-l-[2px] border-black font-extrabold ">Website</th>
+              <th class="border-l-[2px] border-black font-extrabold ">Username</th>
+              <th class="border-l-[2px] border-black font-extrabold ">Password</th>
+              <th class="border-l-[2px] border-black font-extrabold w-[73px] ">Delete</th>
+              
+            </tr>
+
+          </table>
+
+
+<div class="w-[300px]">
+    <h1 class="text-4xl underline font-extrabold mb-3">Add Details</h1>
+          <form action="" class="">
+
+            <label for="website" class="font-extrabold ">Webname:- </label>
+            <input type="text"  name="" id="website" class="border-2 mb-4 border-black focus:outline-none rounded-3xl pl-2 font-medium">
+
+            <label for="email" class="font-extrabold">Username:- </label>
+            <input type="email" name="" id="user" class="border-2 border-black focus:outline-none rounded-3xl pl-2 mb-4 font-medium">
+
+            <label for="pass" class="font-extrabold">Password:- </label>
+            <input type="password" name="" id="pass" class="border-2 border-black focus:outline-none rounded-3xl pl-2 mb-4 font-medium">
+
+            <button id="submit" class="border-2 p-[3px] w-[90px] border-black rounded-xl text-white bg-black font-semibold active:scale-[0.92]">Submit</button>
+
+          </form>
+        </div>
+      </div>
+
+    
+<script src="server.js"></script>
+</body>
+</html>
